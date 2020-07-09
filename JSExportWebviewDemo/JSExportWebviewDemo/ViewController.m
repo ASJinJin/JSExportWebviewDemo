@@ -20,6 +20,7 @@
     [ZBAppCore shareInstance].viewController = self;
 //    NSString *str;
 //    [str lowercaseString]
+    NSLog(@"dsds");
 }
 
 - (void)viewDidLoad {

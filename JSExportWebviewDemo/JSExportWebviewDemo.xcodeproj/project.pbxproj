@@ -384,7 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24DGE2YB25;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jzhou/Desktop/JSExportWebviewDemo/JSExportWebviewDemo/JSExportWebviewDemo.pch;
+				GCC_PREFIX_HEADER = /Users/jzhou/Desktop/GitHubTEST/JSExportWebviewDemo/JSExportWebviewDemo/JSExportWebviewDemo.pch;
 				INFOPLIST_FILE = JSExportWebviewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24DGE2YB25;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jzhou/Desktop/JSExportWebviewDemo/JSExportWebviewDemo/JSExportWebviewDemo.pch;
+				GCC_PREFIX_HEADER = /Users/jzhou/Desktop/GitHubTEST/JSExportWebviewDemo/JSExportWebviewDemo/JSExportWebviewDemo.pch;
 				INFOPLIST_FILE = JSExportWebviewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
