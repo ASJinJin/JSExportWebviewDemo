@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script type="text/javascript">
+
+    function openn(url){
+        try{
+            Plus.webview.open('index.html','1',null,null,function(result){alert(result)});
+
+        }catch(e){
+            alert(e.message)
+        }
+    }
+    var aa = {};
+    function creat(url){
+        try{
+            aa = Plus.webview.create(url);
+            alert(aa);
+        }catch(e){
+            alert(e.message)
+        }
+    }
+    function show(){
+        try{
+            aa.show();
+        }catch(e){
+            alert(e.message)
+        }
+    }
+    
+    function closee(){
+        try{
+            Plus.webview.close();
+        }catch(e){
+            alert(e.message)
+        }
+    }
+
+    
+    var cwv = {};
+    function currentWebview(){
+        try{
+            cwv = Plus.webview.currentWebview();
+            alert('daddf' + cwv.id);
+        }catch(e){
+        }
+    }
+    
+    function getURL(){
+        try{
+            Plus.webview.currentWebview().getURL();
+        }catch(e){
+            alert(e.message)
+        }
+    }
+    
+    function getParent(){
+        try{
+            var parent = Plus.webview.currentWebview().parent;
+            alert('parentWebviewID =' + parent.id);
+        }catch(e){
+            alert(e.message)
+        }
+    }
+    </script>
+    <style>
+        html{
+            width:100%;
+            height:100%;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Next1.html</h1>
+    <div onclick="openn('next2.html')" bgcolor="red">打开下一页</div>
+    <p></p>
+    <div onclick="creat('next2.html')">新建next2.html</div>
+    <div onclick="show()">显示最近创建的webview</div>
+    <div onclick="currentWebview()">当前webview的ID</div>
+    <div onclick="getURL()">当前webview的url</div>
+    <div onclick="getParent()">当前webview的parent ID</div>
+    <br />
+    <div onclick="closee()">关闭当前webview</div>
+
+	<img id='photoInfo'>
+</body>
+</html>
